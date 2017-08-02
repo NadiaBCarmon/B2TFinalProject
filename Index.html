@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Lannister Always Pays His Debts</title>
+
+	<style type="text/css">
+
+		body{
+			background-image: url(Lannister.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: relative;
+		}
+
+
+		h1{
+			color: #D4AF37;
+			font: 'Oleo Script';
+		}
+		
+
+		h3{
+			color: #D4AF37;
+			font: 'Oleo Script';
+			font-size: 20px;
+		}
+
+
+		input[type="button"]{
+			width: 20%
+			position: relative;
+			border-radius: 2000px;
+			font-weight: 500px;
+			font-size: 20px;
+			color: white;
+			height: 60px;
+			background-image: url(Buttons.jpg);
+		}
+
+
+		input[type="text"]{
+			background-color: #470101;
+			color: white;
+			font-weight: 500px;
+			font-size: 20px;
+		}
+	
+	</style>
+	
+</head>
+
+<body>
+
+<!--Advanced Calculator
+When a number/operation is clicked its value will go to the stack, i.e. an array. When enter is clicked perform all operations stored in the stack. Keep in mind the order of operations. Multiplication and division should always be evaluated before addition and subtraction, no matter that order they are inputted. Displaynnesult on screen-->
+
+<!--Page Title - Displayed on the Page-->
+	<center><h1>A Lannister Always Pays His Debts</h1></center>
+
+<!--Div Element - To Contain The Elements of the Calculator-->
+	<div id="body">
+
+		<form name="form">
+
+<!--Input (Text) - A Blank Field To Enter Text And Get The Answer As An Output -->
+		<center><input type="text" name="input" id="inputText"></center>
+		<br />
+
+		<center>
+<!--Input (Button) - Create Buttons for Numbers and Operations-->
+		<input type="button" id="one" value=" 1 " onclick="form.input.value += '1'" />
+		<input type="button" id="two" value=" 2 " onclick="form.input.value += '2'" />
+		<input type="button" id="three" value=" 3 " onclick="form.input.value += '3'" />
+		<input type="button" id="add" value=" + " onclick="form.input.value += ' + '" />
+		</center>
+		<br />
+
+<!-- Asterisks(*) Are Used Instead of "x" To Perform The Multiplication Function -->
+		<center>
+		<input type="button" id="four" value=" 4 " onclick="form.input.value += '4'" />
+		<input type="button" id="five" value=" 5 " onclick="form.input.value += '5'" />
+		<input type="button" id="six" value=" 6 " onclick="form.input.value += '6'" />
+		<input type="button" id="subt" value=" - " onclick="form.input.value += ' - '" />
+		</center>
+		<br />
+
+		<center>
+		<input type="button" id="seven" value=" 7 " onclick="form.input.value += '7'" />
+		<input type="button" id="eight" value=" 8 " onclick="form.input.value += '8'" />
+		<input type="button" id="nine" value=" 9 " onclick="form.input.value += '9'" />
+		<input type="button" id="divi" value=" ÷ " onclick="form.input.value += ' / '"/>
+		</center>
+		<br />
+
+		<center>
+		<input type="button" id="zero" value=" 0 " onclick="form.input.value += '0'" />
+		<input type="button" id="zerozero " value=" 00 " onclick="form.input.value += '00'" />
+		<input type="button" id="dec" value=" . " onclick="form.input.value += ' . '" />
+		<input type="button" id="mult" value=" x " onclick="form.input.value += ' * '" />
+		</center>
+		<br />
+
+		<!-- Eval Function Evaluates Elements And Gives Answer As Output In Text Box --> 
+		<center>
+		<input type="button" id="equal" value=" = " onclick="form.input.value  = eval(form.input.value)"/>
+		<!--Only use the + value with += if we want to add to a value-->
+		<input type="button" id="clear" value=" c " onclick="form.input.value  = ''"/>
+		</center>
+		<br />
+
+		</form>
+
+	</div>
+
+<script type="text/javascript">
+
+ 	//
+
+</script>
+
+<h3>mazvēttan ondoso Nadia Carmon</h3>
+
+</body>
+
+</html>
